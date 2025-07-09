@@ -4,6 +4,7 @@
   "description": "This is find anyting and give back original people web application",
   "main": "./dist/app.js",
   "scripts": {
+    "postinstall": "prisma generate",
     "build": "tsc",
     "start:prod": "node ./dist/app.js",
     "start:dev": "ts-node-dev --respawn --transpile-only ./src/app.ts",
